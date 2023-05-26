@@ -3,3 +3,16 @@
 
 #include "ourAIController.h"
 
+
+void getAccumulateData()
+{
+
+}
+
+void AourAIController::unlockSkill(int unlockSkillNumber, int getItem)
+{
+}
+
+void AourAIController::avoidSkill(int getAttackedSkillNumber)
+{
+}
