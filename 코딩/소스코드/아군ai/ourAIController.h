@@ -29,6 +29,8 @@ private:
 	bool getUpAditem; //공격력아이템
 	bool getUpSdItem; //방어력아이템
 
+	bool checkAttacked;
+
 	int AccumulateDamage;
 	
 };
