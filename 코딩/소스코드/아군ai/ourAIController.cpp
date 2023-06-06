@@ -18,6 +18,12 @@ void AourAIController::unlockSkill(int unlockSkillNumber, int getItem)
 		Blade_Character* Blade_Character = Cast<Blade_Character>(OtherActor);
 		Blade_Character->unlock(unlockSkillNumber); //해당 스킬넘버에있는 애니메이션이 출력
 	}
+	else if (getItem == 2)
+	{
+		Blade_Character* Blade_Character = Cast<Blade_Character>(OtherActor);
+		Blade_Character->unlock2(unlockSkillNumber); //해당 스킬넘버에있는 2번째 애니메이션이 출력
+	}
+
 }
 
 void AourAIController::avoidSkill(int getAttackedSkillNumber)
