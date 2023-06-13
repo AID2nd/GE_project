@@ -2,7 +2,7 @@
 
 #include "ArenaBattle.h"
 #include "GameFramework/SaveGame.h"
-#include "SaveGame.generated.h"
+#include "ABSaveGame.generated.h"
 
 UCLASS()
 class ARENABATTLE_API UABSaveGame : public USaveGame
@@ -10,16 +10,10 @@ class ARENABATTLE_API UABSaveGame : public USaveGame
 	GENERATED_BODY()
 
 public:
-	USaveGame();
+	UABSaveGame();
 
 public:
-	UPROPERTY()
-		FString PlayerName;
-
-	UPROPERTY()
-		float BossSkillCount;
-
-	UPROPERTY()
-		float BossAttackCount;
+	void InitPlayerData();
+	void SavePlayerData();
 
 };
