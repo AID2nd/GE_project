@@ -37,4 +37,11 @@ void AABPlayerState::SavePlayerData()
 	{
 		UE_LOG(LogClass, Warning, TEXT("SaveGame Error!"));
 	}
+
+
+}
+void AABPlayerState::UpdatePlayerState()
+{
+	BossSkillCount->SetText(FText::FromString(FString::FromInt(CurrentPlayerState->GetBossSkillCount())));
+	BossAttackCount->SetText(FText::FromString(FString::FromInt(CurrentPlayerState->GetBossAttackCount())));
 }
