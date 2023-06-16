@@ -22,4 +22,10 @@ public:
 	UPROPERTY()
 		float BossAttackCount;
 
+	UPROPERTY()
+		float playerAvoidData;
+
+	UPROPERTY()
+		float playerSkillDamage;
+
 };
