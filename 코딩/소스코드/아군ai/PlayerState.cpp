@@ -5,6 +5,8 @@ AABPlayerState::AABPlayerState()
 
 	BossSkillCount = 0;
 	BossAttackCount = 0;
+	playerAvoidData = 0;
+	playerSkillDamage = 0;
 	SaveSlotName = TEXT("SlotName");
 }
 
@@ -20,6 +22,8 @@ void AABPlayerState::InitPlayerData()
 	SetPlayerName(ASaveGame->PlayerName);
 	SetBossSkillCount(ASaveGame->BossSkillCount);
 	SetBossAttackCount(ASaveGame->BossAttackCount);
+	SetplayerAvoidData(ASaveGame->playerAvoidData);
+	SetplayerSkillDamage(ASaveGame->playerSkillDamage);
 
 	SavePlayerData();
 }
@@ -32,6 +36,9 @@ void AABPlayerState::SavePlayerData()
 	NewPlayerData->PlayerName = GetPlayerName();
 	NewPlayerData->BossSkillCount = GetBossSkillCount();
 	NewPlayerData->BossAttackCount = GetBossAttackCount();
+
+	NewPlayerData->playerAvoidData = GetplayerAvoidData();
+	NewPlayerData->playerSkillDamage = GetplayerSkillDamage();
 
 	if (false == UGameplayStatics::SaveGameToSlot(NewPlayerData, SaveSlotName, 0))
 	{
