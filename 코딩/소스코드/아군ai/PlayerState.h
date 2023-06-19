@@ -8,8 +8,12 @@ UCLASS()
 class ARENABATTLE_API UABSaveGame : public USaveGame
 {
 	GENERATED_BODY()
+private:
+	UPROPERTY()
+	float avoidPercent;
 
 public:
+
 	UABSaveGame();
 
 public:
@@ -17,5 +21,7 @@ public:
 	void SavePlayerData();
 
 	void UpdatePlayerState();
+
+	void AvoidPercentage();
 
 };

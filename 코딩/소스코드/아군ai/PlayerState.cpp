@@ -55,3 +55,14 @@ void AABPlayerState::UpdatePlayerState()
 	playerSkillDamage->SetText(FText::FromString(FString::FromInt(CurrentPlayerState->GetplayerSkillDamage())));
 
 }
+void AABPlayerState::AvoidPercentage()
+{
+	//플레이어 데이터를 토대로 피하기
+	if (BossSkillCount > BossAttackCount)
+	{
+		// 뒤로 스킬사용해서 피해라
+	}
+	
+
+
+}
