@@ -51,4 +51,7 @@ void AABPlayerState::UpdatePlayerState()
 {
 	BossSkillCount->SetText(FText::FromString(FString::FromInt(CurrentPlayerState->GetBossSkillCount())));
 	BossAttackCount->SetText(FText::FromString(FString::FromInt(CurrentPlayerState->GetBossAttackCount())));
+	playerAvoidData->SetText(FText::FromString(FString::FromInt(CurrentPlayerState->GetplayerAvoidData())));
+	playerSkillDamage->SetText(FText::FromString(FString::FromInt(CurrentPlayerState->GetplayerSkillDamage())));
+
 }
