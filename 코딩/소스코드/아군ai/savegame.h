@@ -23,9 +23,9 @@ public:
 		float BossAttackCount;
 
 	UPROPERTY()
-		float playerAvoidData;
+		float SaveAttackDamage;
 
 	UPROPERTY()
-		float playerSkillDamage;
+		float SaveSkillDamage;
 
 };

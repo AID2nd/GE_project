@@ -10,7 +10,9 @@ class ARENABATTLE_API UABSaveGame : public USaveGame
 	GENERATED_BODY()
 private:
 	UPROPERTY()
-	float avoidPercent;
+		float avoidSkillPercent;
+	UPROPERTY()
+		float avoidAttackPercent;
 
 public:
 
