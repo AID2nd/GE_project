@@ -71,11 +71,15 @@ void AABPlayerState::AvoidPercentage()
 
 	if (avoidSkillPercent > randAvoidSkill) //1~100까지 수 중에 랜덤으로 나온 수(확률)보다 피할 확률이 크면
 	{
+		Blade_Character* Blade_Character = Cast<Blade_Character>(OtherActor);
+		Blade_Character->Avoid();
 		UE_LOG(LogClass, Warning, TEXT("스킬공격회피"));
 		// 뒤로 스킬사용해서 피해라
 	}
 	if (avoidAttackPercent > randAvoidAttack)//1~100까지 수 중에 랜덤으로 나온 수(확률)보다 피할 확률이 크면
 	{
+		Blade_Character* Blade_Character = Cast<Blade_Character>(OtherActor);
+		Blade_Character->Avoid();
 		UE_LOG(LogClass, Warning, TEXT("일반공격회피"));
 		// 뒤로 스킬사용해서 피해라
 	}
