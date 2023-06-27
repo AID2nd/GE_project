@@ -10,6 +10,8 @@ AABPlayerState::AABPlayerState()
 	BossAttackCount = 0;
 	SaveSkillDamage = 0;
 	SaveAttackDamage = 0;
+	playerSkillCount = 0;
+	playerSkillDamage = 0;
 	SaveSlotName = TEXT("SlotName");
 }
 
@@ -83,7 +85,10 @@ void AABPlayerState::AvoidPercentage()
 		UE_LOG(LogClass, Warning, TEXT("일반공격회피"));
 		// 뒤로 스킬사용해서 피해라
 	}
-	
 
+}
+
+void AABPlayerState::playerSkillOpen()
+{
 
 }

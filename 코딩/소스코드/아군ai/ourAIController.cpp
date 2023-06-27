@@ -3,6 +3,7 @@
 
 #include "ourAIController.h"
 #include "Blade_Character.h"
+#include "PlayerState.h"
 
 void getAccumulateData()
 {

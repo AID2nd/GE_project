@@ -14,6 +14,11 @@ private:
 	UPROPERTY()
 		float avoidAttackPercent;
 
+	UPROPERTY()
+		float playerSkillCount;
+	UPROPERTY()
+		float playerSkillDamage;
+
 public:
 
 	UABSaveGame();
@@ -26,4 +31,5 @@ public:
 
 	void AvoidPercentage();
 
+	void playerSkillOpen();
 };
