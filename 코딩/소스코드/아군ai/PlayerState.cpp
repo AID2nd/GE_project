@@ -90,5 +90,13 @@ void AABPlayerState::AvoidPercentage()
 
 void AABPlayerState::playerSkillOpen()
 {
+	if (playerSkillCount >= 5) //플레이어 스킬공격성공횟수가 5회이상이면
+	{
+		Blade_Character* Blade_Character = Cast<Blade_Character>(OtherActor);
+		Blade_Character->OpenAiSkill(); //스킬을 해금해라
+
+		//ai스킬은 8초에 한번씩 사용
+
+	}
 
 }
