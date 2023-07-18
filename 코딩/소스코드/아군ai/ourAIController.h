@@ -21,6 +21,7 @@ public:
 	void upDamage();
 	void upDefense();
 private:
+	int targetingCount;
 	int32 itemUpDamage; // 데미지 아이템에따른 상승량 
 	int32 itemUpDefense; //방어력상승
 	int32 unlockSkillNumber; // 저장된 해금용 스킬
